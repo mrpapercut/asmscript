@@ -1,0 +1,33 @@
+@import 'fonts';
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: #333;
+    color: #fff;
+    min-width: 640px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    #codeblock {
+        width: 60%;
+        float: left;
+
+        textarea {
+            width: 100%;
+            min-height: 80vh;
+            font-family: 'Source Code Pro', monospace;
+            background: #333;
+            color: #fff;
+        }
+    }
+
+    #registers {
+        width: 40%;
+        float: left;
+
+        #eflags {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+}
